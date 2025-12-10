@@ -1,86 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Divya Prasheetha | Developer & Problem Solver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Pretty font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<body>
+<div class="page">
 
     <!-- Navbar -->
     <header class="navbar">
         <div class="nav-left">
-            <span class="logo">Pranav</span>
+            <span class="logo-mark">●</span>
+            <span class="logo-text">Divya Prasheetha</span>
         </div>
         <nav class="nav-links">
+            <a href="#work">Work</a>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Main content -->
     <main>
 
-        <section id="about">
-            <h1>Pranav</h1>
-            <h3>Aspiring Software Developer</h3>
-
-            <p>
-                I am a student interested in programming, problem solving,
-                and building real-world projects.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Tic Tac Toe (Minimax AI)</h3>
-                <p>
-                    A tic-tac-toe game where the computer plays optimally using
-                    the minimax algorithm.
+        <!-- Hero section -->
+        <section class="hero" id="top">
+            <div class="hero-text">
+                <p class="eyebrow">Developer • Problem Solver • Learner</p>
+                <h1>Hi, I’m <span class="accent">Divya Prasheetha</span>.</h1>
+                <p class="hero-subtitle">
+                    I build thoughtful, logic-driven projects and care a lot
+                    about clean code and clean design. This portfolio is my
+                    little corner of the internet to show that off.
                 </p>
-                <p>
-                    Tech: C, Game Logic, Minimax
-                </p>
-                <a href="#" target="_blank">View on GitHub</a>
+                <div class="hero-actions">
+                    <a href="#work" class="btn primary">View my work</a>
+                    <a href="#contact" class="btn ghost">Let’s connect</a>
+                </div>
             </div>
 
-            <div class="project">
-                <h3>DSA & Dynamic Programming Problems</h3>
-                <p>
-                    A collection of solved problems focused on arrays, recursion,
-                    DP, and algorithms.
+            <div class="hero-card">
+                <p class="hero-tagline">
+                    <span class="pill">Currently learning</span>
+                    <br>
+                    Web development, game logic, algorithms &amp; creative UI.
                 </p>
-                <p>
-                    Tech: C, C++, Algorithms
-                </p>
-                <a href="#" target="_blank">View on GitHub</a>
+                <ul class="hero-stats">
+                    <li>
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Games & tools</span>
+                    </li>
+                    <li>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Problems solved</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>Data Structures &amp; Algorithms</li>
-                <li>HTML (Learning)</li>
-            </ul>
+        <!-- Projects / Work -->
+        <section class="section" id="work">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <p>Small projects with a lot of thought behind them.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-pill">Game AI</div>
+                    <h3>Tic Tac Toe with Minimax</h3>
+                    <p class="project-desc">
+                        A classic tic tac toe game where the computer never
+                        loses. Implemented using the minimax algorithm and
+                        careful state evaluation.
+                    </p>
+                    <p class="project-tech">C • Algorithms • Game Logic</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Divvvya363/Tictactoe-game-using-minimax" target="_blank">View code ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-pill">Algorithms</div>
+                    <h3>DSA & Dynamic Programming</h3>
+                    <p class="project-desc">
+                        A growing collection of solved problems focused on
+                        arrays, DP, recursion and optimization, with clear and
+                        well-commented implementations.
+                    </p>
+                    <p class="project-tech">C • C++ • Data Structures</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Divvvya363/Tictactoe-game-using-minimax" target="_blank">View code ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-pill">Experimental</div>
+                    <h3>Logic & Game Experiments</h3>
+                    <p class="project-desc">
+                        Small experiments around board games, path finding and
+                        move validation – where most of the fun is in the logic.
+                    </p>
+                    <p class="project-tech">C • Problem Solving</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Divvvya363/Tictactoe-game-using-minimax" target="_blank">View code ↗</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your-email@example.com</p>
-            <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-header">
+                <h2>About</h2>
+            </div>
+            <div class="about-layout">
+                <p>
+                    I’m a student who enjoys breaking problems into tiny pieces
+                    and building them back up into working programs. I’ve been
+                    working with C / C++ and algorithms, and recently started
+                    bringing those skills into web development and game logic.
+                </p>
+                <p>
+                    Design matters to me – not just how things look, but how
+                    they feel to use. This page is a work in progress, just like
+                    my skills, but every section is something I’m deliberately
+                    shaping and improving.
+                </p>
+            </div>
         </section>
 
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div>
+                    <h3 class="skills-heading">Core</h3>
+                    <ul class="tag-list">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="skills-heading">Web &amp; Tools</h3>
+                    <ul class="tag-list">
+                        <li>HTML &amp; CSS (learning)</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>Linux / Fedora</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Open to internships, collaborations, and interesting problems.</p>
+            </div>
+            <div class="contact-box">
+                <p class="contact-line">
+                    Email:
+                    <a href="mailto:prasheethavdivya@gmail.com">
+                        prasheethavdivya@gmail.com
+                    </a>
+                </p>
+                <p class="contact-line">
+                    GitHub:
+                    <a href="https://github.com/Divvvya363" target="_blank">
+                        github.com/Divvvya363
+                    </a>
+                </p>
+            </div>
+        </section>
     </main>
 
-</body>
+    <footer class="footer">
+        <span>© <span id="year"></span>Divya Prasheetha</span>
+        <span class="footer-note">Built with patience, curiosity, and lots of CSS tweaks.</span>
+    </footer>
 
+</div>
 
+<script>
+    // Tiny script: auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
